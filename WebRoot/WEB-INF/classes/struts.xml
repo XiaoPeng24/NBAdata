@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+	
+	<!-- 
+	<constant name="struts.multipart.maxSize" value="1048576000"></constant>
+	 -->
+	 
+	<package name="NBAdata" extends="tiles-default" namespace="/UI">
+	      
+	      
+	      <action name="Calendar" class="calendarAction">
+	        
+	      </action>
+	      
+	      <action name="Game_info" class="game_infoAction">
+	           <result name="success" type="tiles">Game_info-definition</result>
+	      </action>
+	      
+	      <action name="Team" class="teamAction">
+	           <result name="success">Team_info.jsp</result>
+	      </action>
+	      
+	      <action name="Player" class="playerAction">
+	           <result name="success">Player_info.jsp</result>
+	      </action>
+	      
+	      <action name="Coach" class="coachAction">
+	           <result name="success">Coach_info.jsp</result>
+	      </action>
+	      
+	      <action name="Honor" class="honorAction">
+	      
+	      </action>
+	      
+	</package>
+	
+</struts>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+     <class  name="com.nba.bean.Teamname" table="teamname">
+     
+           <id name="id" column="id" type="long">
+                <generator class="foreign">
+                    <param name="property">gamedate</param>
+                </generator>
+           </id>
+           
+           <property name="home" column="home" type="string"></property>
+           <property name="away" column="away" type="string"></property>
+           <property name="date" column="date" type="date"></property>
+           
+           <bag name="teamdatas" cascade="none" inverse="true" outer-join="true">
+               <key column="id"></key>
+               <one-to-many class="com.nba.bean.Teamdata" />
+           </bag>
+     </class>
+
+
+</hibernate-mapping>

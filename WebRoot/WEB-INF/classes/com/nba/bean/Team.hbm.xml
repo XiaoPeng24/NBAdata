@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.nba.bean.Team" table="teams">
+    
+        <id name="id" column="id" type="int"></id>
+        
+        <property name="name" column="name" type="string"></property>
+        <property name="en_name" column="en_name" type="string"></property>
+        <property name="retired_nums" column="retired_nums" type="string"></property>
+        <property name="conference" column="conference" type="string"></property>
+        <property name="division" column="division" type="string"></property>
+        <property name="short_name" column="short_name" type="string"></property>
+        
+        <bag name="players" table="player_team" cascade="none" inverse="true">
+             <key column="team_id"></key>
+             <many-to-many class="com.nba.bean.Player" column="player_id"></many-to-many>
+        </bag>
+        
+        <bag name="coaches" table="coach_team" cascade="none" inverse="true">
+             <key column="team_id"></key>
+             <many-to-many class="com.nba.bean.Coach" column="coach_id"></many-to-many>
+        </bag>
+        
+        <bag name="honors" table="team_honor" cascade="none" inverse="true">
+             <key column="team_id"></key>
+             <many-to-many class="com.nba.bean.Honor" column="honor_name"></many-to-many>
+        </bag>
+        
+    </class>
+
+
+</hibernate-mapping>
