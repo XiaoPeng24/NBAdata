@@ -1,0 +1,103 @@
+div#page {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+div#background {
+    float: left;
+    width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    background: #010d23;
+    border: 1px solid #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.header {
+    float: left;
+    width: 1286px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+div.itemList{
+	float: left;
+    z-index: 9999999;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 60px;
+    text-align: right;
+}
+
+div.item{
+	float: left;
+	width: 150px;
+    margin: 1px;
+    height: 27px;
+    position: relative;
+    z-index: 999999999;
+    text-align: center;
+    color: #009CFF;
+}
+
+div.title{
+	color: white;
+    font-size: 22px;
+    float: left;
+    width: 400px;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+div.stat_box{
+	float: left;
+	display: block;
+}
+
+table.stat_box{
+	font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid #05295a;
+    color: #009cff;
+    background: #010713;
+    width: 900px;
+    margin-left: 180px;
+    margin-top: 50px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.stat_box th {
+    cursor: pointer;
+    height: 20px;
+    border: 3px solid #03284e;
+    color: wheat;
+}
+
+.stat_box td {
+    text-align: center;
+    border: 3px solid #05295a;
+    font-weight: normal;
+}
+
+div.team div{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: white;
+}

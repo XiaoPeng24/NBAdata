@@ -1,0 +1,111 @@
+div#page {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+div#background {
+    float: left;
+    width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    background: #010d23;
+    border: 1px solid #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.header {
+    float: left;
+    width: 1286px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+div.itemList{
+	float: left;
+    z-index: 9999999;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 60px;
+    text-align: right;
+}
+
+div.item{
+	float: left;
+	width: 150px;
+    margin: 1px;
+    height: 27px;
+    position: relative;
+    z-index: 999999999;
+    text-align: center;
+    color: #009CFF;
+}
+div.coachinfo{
+	font-size: 15px;
+    width: 960px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+div.name{
+    text-align: left;
+    height: 35px;
+    float: left;
+    width: 600px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+div.detail{
+    float: left;
+    width: 380px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+div.row{
+    float: left;
+    color: wheat;
+    text-align: left;
+    width: 380px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+div.column{
+	text-align: left;
+    float: left;
+    color: #00d683;
+    font-weight: bolder;
+}
+
+div.stat_box{
+	float: left;
+    width: 980px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+table.stat_box {
+    width: 960px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid #05295a;
+    color: #009cff;
+    background: #010713;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    text-align: center;
+}

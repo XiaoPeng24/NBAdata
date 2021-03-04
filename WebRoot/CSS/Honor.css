@@ -1,0 +1,113 @@
+div#page {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+div#background {
+    float: left;
+    width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    background: #010d23;
+    border: 1px solid #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.header {
+    float: left;
+    width: 1286px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+div.itemList{
+	float: left;
+    z-index: 9999999;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 60px;
+    text-align: right;
+}
+
+div.item{
+	float: left;
+	width: 150px;
+    margin: 1px;
+    height: 27px;
+    position: relative;
+    z-index: 999999999;
+    text-align: center;
+    color: #009CFF;
+}
+div.title{
+	color: white;
+    font-size: 20px;
+    float: left;
+    width: 500px;
+    height: 28px;
+    line-height: 28px;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+div.honors{
+	width: 960px;
+    float: left;
+    margin-left: 150px;
+}
+
+label.honor{
+	float: left;
+    margin: 2px 3px;
+    height: 20px;
+    width: 230px;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
+
+div.stat_box{
+	width: 960px;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+ 
+ table.stat_box {
+    width: 960px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid #05295a;
+    color: #009cff;
+    background: #010713;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table.stat_box1 {
+    width: 200px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid #05295a;
+    color: #009cff;
+    background: #010713;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+thead{
+	color:green;
+}

@@ -1,0 +1,128 @@
+div#page {
+    width: 1286px;
+    margin: 0 auto;
+}
+
+div#background {
+    float: left;
+    width: 1286px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    background: #010d23;
+    border: 1px solid #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.header {
+    float: left;
+    width: 1286px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+div.itemList{
+	float: left;
+    z-index: 9999999;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 60px;
+    text-align: right;
+}
+
+div.item{
+	float: left;
+	width: 150px;
+    margin: 1px;
+    height: 27px;
+    position: relative;
+    z-index: 999999999;
+    text-align: center;
+    color: #009CFF;
+}
+table{
+	background: #ffffff;
+}
+
+.year{
+	background: #fffff;
+    color: #fff;
+    width:　20px;
+    height:　50px;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.year input{
+	display: none;
+}
+
+.month{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.month input{
+    display: none;
+}
+
+div#calendar{
+	width: 1260px;
+	float: left;
+	display: block;
+	z-index: 0;
+}
+
+div#year_month{
+	margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: white;
+    font-size: 18px;
+    float: left;
+    width: 200px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table#table_calendar{
+	width: 1080px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid #05295a;
+    color: #009cff;
+    background: #010713;
+    float: left;
+    margin-bottom: 20px;
+}
+
+div#day_game{
+	height: 250px;
+	width: 180px;
+    float: left;
+    z-index: 99;
+    margin-top: 0px;
+    display: block;
+}
+
+a{
+	color: white;
+}

@@ -1,0 +1,136 @@
+div#page {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+div#background {
+    float: left;
+    width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    background: #010d23;
+    border: 1px solid #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.header {
+    float: left;
+    width: 1286px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+div.itemList{
+	float: left;
+    z-index: 9999999;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 60px;
+    text-align: right;
+}
+
+div.item{
+	float: left;
+	width: 150px;
+    margin: 1px;
+    height: 27px;
+    position: relative;
+    z-index: 999999999;
+    text-align: center;
+    color: #009CFF;
+}
+
+div.intro{
+	margin-top: 5px;
+	float: left;
+    margin-left: 315px;
+    display: block;
+}
+
+div.text{
+	font-size: 16px;
+    float: left;
+    width: 600px;
+    margin-left: 30px;
+    display: block;
+}
+
+div.head {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+    float: left;
+    font-weight: bold;
+    width: 500px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.text .row {
+    margin-bottom: 2px;
+    float: left;
+    color: white;
+    text-align: left;
+    width: 600px;
+}
+
+.text .column {
+    margin-right: 10px;
+    text-align: left;
+    float: left;
+    color: #00d683;
+    font-weight: bolder;
+    display: block;
+}
+
+.text .value {
+    font-weight: bolder;
+    display: block;
+}
+
+div.title{
+	width: 400px;
+	text-align: center;
+	color: #ffffff;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+div.stat_box{
+	float: left;
+	margin-top: 0px;
+}
+
+table.stat_box {
+    width: 960px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 3px solid #05295a;
+    color: #009cff;
+    background: #010713;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stat_box th {
+    cursor: pointer;
+    height: 20px;
+    border: 3px solid #03284e;
+    color: wheat;
+}
+
+.stat_box td {
+    text-align: center;
+    border: 3px solid #05295a;
+    font-weight: normal;
+}

@@ -1,0 +1,106 @@
+div#page {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+div#background {
+    float: left;
+    width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -15px;
+    background: #010d23;
+    border: 1px solid #333333;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.header {
+    float: left;
+    width: 1286px;
+}
+
+.logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+div.itemList{
+	float: left;
+    z-index: 9999999;
+    width: 800px;
+    margin-left: 200px;
+    margin-top: 60px;
+    text-align: right;
+}
+
+div.item{
+	float: left;
+	width: 150px;
+    margin: 1px;
+    height: 27px;
+    position: relative;
+    z-index: 999999999;
+    text-align: center;
+    color: #009CFF;
+}
+
+div.title{
+	color: white;
+    font-size: 25px;
+    float: left;
+    width: 400px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.playerList {
+    width: 960px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.coachList {
+    width: 960px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.name {
+    float: left;
+}
+
+a.starplayer {
+    color: white;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    text-align: center;
+    width: 320px;
+    font-size: 15px;
+    background: none;
+    overflow: hidden;
+}
+
+a.starcoach {
+    color: white;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    text-align: center;
+    width: 320px;
+    font-size: 15px;
+    background: none;
+    overflow: hidden;
+}
+
