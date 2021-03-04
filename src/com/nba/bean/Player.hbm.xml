@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.nba.bean.Player" table="players">
+    
+        <id name="id" column="id" type="int"></id>
+        
+         <property name="name" column="name" type="string"></property>
+         <property name="fullname" column="fullname" type="string"></property>
+         <property name="position" column="position" type="string"></property>
+         <property name="height" column="height" type="string"></property>
+         <property name="weight" column="weight" type="string"></property>
+         <property name="birthday" column="birthday" type="string"></property>
+         <property name="born_city" column="born_city" type="string"></property>
+         <property name="highschool" column="highschool" type="string"></property>
+         <property name="university" column="university" type="string"></property>
+         <property name="number" column="number" type="string"></property>
+         <property name="draft" column="draft" type="string"></property>
+         
+         <bag name="teams" table="player_team" cascade="none">
+             <key column="player_id"></key>
+             <many-to-many class="com.nba.bean.Team" column="team_id"></many-to-many>
+         </bag>
+         
+         <bag name="honors" table="player_honor" cascade="none" inverse="true">
+             <key column="player_id"></key>
+             <many-to-many class="com.nba.bean.Honor" column="honor_name"></many-to-many>
+         </bag>
+        
+    </class>
+
+
+</hibernate-mapping>

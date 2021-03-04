@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.nba.bean.Coach" table="coaches">
+    
+        <id name="id" column="id" type="int"></id>
+        
+         <property name="name" column="name" type="string"></property>
+         <property name="birthday" column="birthday" type="string"></property>
+         <property name="born_city" column="born_city" type="string"></property>
+         <property name="highschool" column="highschool" type="string"></property>
+         <property name="university" column="university" type="string"></property>
+         <property name="coach_career" column="coach_career" type="string"></property>
+         <property name="regulations" column="regulations" type="string"></property>
+         <property name="playoffs" column="playoffs" type="string"></property>
+         <property name="finals" column="finals" type="string"></property>
+         <property name="champions" column="champions" type="string"></property>
+         <property name="COYs" column="COYs" type="string"></property>
+         
+         <bag name="teams" table="coach_team" cascade="none">
+             <key column="coach_id"></key>
+             <many-to-many class="com.nba.bean.Team" column="team_id"></many-to-many>
+         </bag>
+         
+        
+    </class>
+
+
+</hibernate-mapping>

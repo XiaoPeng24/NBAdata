@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.nba.bean.Coach_team" table="coach_team">
+    
+         <composite-id>
+            <key-property name="coach_id" column="coach_id"></key-property>
+            <key-property name="team_id" column="team_id"></key-property>
+            <key-property name="season" column="season" type="string"></key-property>
+            <key-property name="re_or_ploff" column="re_or_ploff" type="boolean"></key-property>
+         </composite-id>
+         
+        
+        <property name="games" column="games" type="string"></property>
+		<property name="shoot" column="shoot" type="string" not-null="true"></property>
+		<property name="hit" column="hit" type="string"></property>
+		<property name="shot" column="shot" type="string"></property>
+		<property name="threep" column="threep" type="string"></property>	
+		<property name="hit2" column="hit2" type="string"></property>
+		<property name="shot2" column="shot2" type="string"></property>
+		<property name="freet" column="freet" type="string"></property>
+		<property name="hit3" column="hit3" type="string"></property>
+		<property name="shot3" column="shot3" type="string"></property>
+		<property name="realhit" column="realhit" type="string"></property>
+		<property name="backboard" column="backboard" type="string"></property>
+		<property name="frontcourt" column="frontcourt" type="string"></property>
+		<property name="backcourt" column="backcourt" type="string"></property>
+		<property name="assists" column="assists" type="string"></property>
+		<property name="steals" column="steals" type="string"></property>
+		<property name="blockashot" column="blockashot" type="string"></property>
+		<property name="anerror" column="anerror" type="string"></property>
+		<property name="foul" column="foul" type="string"></property>
+		<property name="score" column="score" type="string"></property>
+		<property name="win" column="win" type="string"></property>
+		<property name="lose" column="lose" type="string"></property>
+		<property name="winrate" column="winrate" type="string"></property>
+    
+    </class>
+
+</hibernate-mapping>
